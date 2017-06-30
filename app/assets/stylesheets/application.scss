@@ -13,3 +13,10 @@
  */
 @import "bootstrap";
 @import "tether";
+
+p.description {
+  min-height: 100px;
+}
+.dataset {
+  min-height: 400px;
+}

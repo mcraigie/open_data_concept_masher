@@ -38,6 +38,7 @@ gem 'rb-fsevent', '0.9.8'
 gem 'tether-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'levenshtein', '~> 0.2.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
