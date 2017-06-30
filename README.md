@@ -1,4 +1,4 @@
-# Open Data Masher
+# Open Data Concept Masher
 
 A rails app to help people come up with ideas for open data mashups.
 
