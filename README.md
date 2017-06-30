@@ -1,24 +1,7 @@
-# README
+# Open Data Masher
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails app to help people come up with ideas for open data mashups.
 
-Things you may want to cover:
+The metadata used to generate mashup ideas comes from [Victoria's open data directory](https://www.data.vic.gov.au/)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Credit to [@calmerbeard](https://twitter.com/calmerbeard) for the idea.
