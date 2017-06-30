@@ -1,19 +1,17 @@
 class MainPageController < ApplicationController
   def random
-    tmp = OpenDataset.order("RANDOM()")
-    a = tmp.first
-    b = tmp.second
-    loop do
-      if Levenshtein.distance(a.name, b.name) >= 6
-        break
-      else
-        OpenDataset.uncached do
-      	b = OpenDataset.order("RANDOM()").first
-        end
+    OpenDataset.uncached do
+      tmp = OpenDataset.order("RANDOM()").first(10)
+      a = tmp.first
+      b = tmp.second
+      
+      loop do
+        break if Levenshtein.distance(a.name, b.name) >= 5
+        b = tmp.sample
       end
-    end
 
-    redirect_to action: "mashup", a: a.id, b: b.id
+      redirect_to action: "mashup", a: a.id, b: b.id
+    end    
   end
 
   def mashup
