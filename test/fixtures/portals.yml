@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  search_base_url: MyString
+  dataset_base_url: MyString
+  dataset_element_selector: MyString
+  dataset_relative_url_selector: MyString
+  dataset_name_selector: MyString
+  dataset_description_selector: MyString
+
+two:
+  name: MyString
+  description: MyText
+  search_base_url: MyString
+  dataset_base_url: MyString
+  dataset_element_selector: MyString
+  dataset_relative_url_selector: MyString
+  dataset_name_selector: MyString
+  dataset_description_selector: MyString
