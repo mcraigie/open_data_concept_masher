@@ -1,0 +1,11 @@
+<!-- <h1><%= @mashup_name %></h1> -->
+
+<% @pair.each do |dataset| %>
+  <div>
+    <h2><a href="<%=dataset.url %>"><%= dataset.name %></a></h2>
+    <p><%= dataset.description %></p>
+    <a href="<%=dataset.url %>">Link to Dataset</a>
+  </div>
+<% end %>
+
+<a href="<%=root_url %>">Randomise Datasets</a>
