@@ -1,11 +1,16 @@
-<!-- <h1><%= @mashup_name %></h1> -->
-
-<% @pair.each do |dataset| %>
-  <div>
-    <h2><a href="<%=dataset.url %>"><%= dataset.name %></a></h2>
-    <p><%= dataset.description %></p>
-    <a href="<%=dataset.url %>">Link to Dataset</a>
+<div class="dataset_container">
+  <div class="dataset dataset_a">
+    <h2><a href="<%= @a.url %>"><%= @a.name %></a></h2>
+    <p><%= @a.description %></p>
+    <a href="<%= @a.url %>">Link to Dataset</a>
   </div>
-<% end %>
-
-<a href="<%=root_url %>">Randomise Datasets</a>
+  <div class="button_column">
+    <a class="btn btn-primary" href="<%= root_url %>">Randomise!</a>
+    <a class="btn btn-info" href="<%= root_url %>">Tweet Mashup</a>
+  </div>
+  <div class="dataset dataset_b">
+    <h2><a href="<%= @b.url %>"><%= @b.name %></a></h2>
+    <p><%= @b.description %></p>
+    <a href="<%= @b.url %>">Link to Dataset</a>
+  </div>
+</div>
