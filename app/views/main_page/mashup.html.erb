@@ -1,17 +1,16 @@
-<div class="modal-body row text-center">
-  <div class="col-md-6 dataset dataset_a">
-    <h2><a href="<%= @a.url %>"><%= @a.name %></a></h2>
+<div class="row_container text-center">
+  <div class="dataset dataset_a">
+    <h1><a href="<%= @a.url %>"><%= @a.name %></a></h2>
     <p class="description"><%= @a.description %></p>
     <a class="btn btn-success" href="<%= @a.url %>">Link to Dataset</a>
   </div>
-  <div class="col-md-6 dataset dataset_b">
-    <h2><a href="<%= @b.url %>"><%= @b.name %></a></h2>
+  <div class="button_column">
+    <a class="btn btn-danger" href="<%= root_url %>">Randomise!</a>
+    <a class="btn btn-info" href="<%= @tweet_url %>" target="_blank" >Tweet!</a>    
+  </div>
+  <div class="dataset dataset_b">
+    <h1><a href="<%= @b.url %>"><%= @b.name %></a></h2>
     <p class="description"><%= @b.description %></p>
     <a class="btn btn-success" href="<%= @b.url %>">Link to Dataset</a>
   </div>
-</div>
-
-<div class="button_column">
-  <a class="btn btn-danger" href="<%= root_url %>">Randomise!</a>
-  <a class="btn btn-info" href="<%= root_url %>">Tweet Mashup</a>
 </div>
