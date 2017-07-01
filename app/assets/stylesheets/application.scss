@@ -34,7 +34,8 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.0325em;
-	font-size: 65px;
+	font-size: 60px;
+	font-size: 6.5vh;
 }
 
 .dataset_row {
@@ -67,15 +68,22 @@ body {
 	background: #0080BF;
 	margin-left: 20px;
 }
+
 .dataset_b {
 	background: #CC1B54;
 	margin-right: 20px;
+}
+
+.dataset h2 {
+	max-height: 11vh;
+	overflow: hidden;
 }
 
 .dataset h2 a {
 	color: #F4F4F2;
 	font-family: Montserrat, sans-serif;
 	font-size: 35px;
+	font-size: 5vh;
 	font-weight: bold;
 	letter-spacing: 0.0325em;
 	text-decoration: none;
@@ -83,7 +91,8 @@ body {
 }
 
 .dataset p {
-	margin-top: 30px;
+	max-height: 10vh;
+	margin-top: 1vh;
 	color: #FDFFFC;
 	font-family: Montserrat, sans-serif;
 	margin-bottom: auto;
