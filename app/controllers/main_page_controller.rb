@@ -23,8 +23,8 @@ class MainPageController < ApplicationController
     @a = OpenDataset.find(params[:a])
     @b = OpenDataset.find(params[:b])
 
-    a_truncated = truncate(@a.name, :length => 30)
-    b_truncated = truncate(@b.name, :length => 30)
+    a_truncated = truncate(@a.name, :length => 27)
+    b_truncated = truncate(@b.name, :length => 27)
 
     @tweet_url = "https://twitter.com/intent/tweet?text="
     @tweet_url << ERB::Util.url_encode("#{a_truncated} + #{b_truncated}\n")

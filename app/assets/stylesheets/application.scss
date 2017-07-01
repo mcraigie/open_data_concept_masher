@@ -17,13 +17,28 @@
 html {
 	height: 100%;
 }
+
 body {
 	background: #F4F4F2;
 	height: 100%;
 }
 
-.row_container {
-	height: 100%;
+.band {
+	height: 20%;
+	padding-top: 30px;
+}
+
+.main_heading {
+	color: 131515;
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.0325em;
+	font-size: 65px;
+}
+
+.dataset_row {
+	height: 60%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -33,45 +48,60 @@ body {
 }
 
 .dataset {
-	min-height: 50%;
-	max-height: 70%;
-	flex-basis: 40%;
-	flex-grow: 1;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	margin: 20px;
+	height: 85%;
+
+	flex-basis: 46%;
+	padding-top: 55px;
+	padding-left: 50px;
+	padding-right: 50px;
+	overflow: hidden;
+
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .dataset_a {
 	background: #0080BF;
+	margin-left: 20px;
 }
 .dataset_b {
 	background: #CC1B54;
+	margin-right: 20px;
 }
 
-.dataset h1 a {
-	text-decoration: none;
+.dataset h2 a {
 	color: #F4F4F2;
 	font-family: Montserrat, sans-serif;
+	font-size: 35px;
 	font-weight: bold;
-	letter-spacing: 0.0625em;
-    text-transform: uppercase;
+	letter-spacing: 0.0325em;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .dataset p {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 30px;
 	color: #FDFFFC;
 	font-family: Montserrat, sans-serif;
+	margin-bottom: auto;
+}
+
+.dataset .btn {
+	margin-top: auto;
+	margin-bottom: 40px;
 }
 
 .button_column {
-	flex-basis: 10%;
+	flex-basis: 8%;
+
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
+
 	padding-left: 30px;
 	padding-right: 30px;
 	height: 50%
@@ -80,4 +110,5 @@ body {
 .btn {
 	margin-bottom: 20px;
 	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
 }
