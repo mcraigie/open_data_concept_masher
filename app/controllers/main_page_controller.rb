@@ -11,8 +11,8 @@ class MainPageController < ApplicationController
       b = tmp.second
 
       loop do
-        b = tmp.sample
         break if Levenshtein.distance(a.name, b.name) >= MINIMUM_NAME_DISTANCE
+        b = tmp.sample
       end
 
       redirect_to action: "mashup", a: a.id, b: b.id
