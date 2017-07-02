@@ -4,7 +4,7 @@ class FetchMetadataJob < ApplicationJob
   queue_as :default
 
   def perform(*args)
-    search_page_limit = 1
+    search_page_limit = 350
     Portal.find(:all) do |portal|
       (1..search_page_limit).each do |page_number|
         doc = Nokogiri::HTML(open("#{portal.search_base_url}#{page_number}"))
