@@ -26,7 +26,6 @@ body {
 .band {
 	height: 15%;
 	padding-top: 30px;
-	overflow: hidden;
 }
 
 .main_heading {
@@ -35,8 +34,7 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.0325em;
-	font-size: 100%;
-	font-size: calc(2vw + 2vh + 1vmin);
+	font-size: calc(2vw + 2vh + 2vmin);
 }
 
 .dataset_row {
@@ -82,7 +80,7 @@ body {
 .dataset h2 a {
 	color: #F4F4F2;
 	font-family: Montserrat, sans-serif;
-	font-size: calc(1vw + 1vh + 0.5vmin);
+	font-size: calc(1.5vw + 1.5vh + 0.5vmin);
 	font-weight: bold;
 	letter-spacing: 0.0325em;
 	text-decoration: none;
