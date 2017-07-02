@@ -20,8 +20,13 @@ class MainPageController < ApplicationController
   end
 
   def mashup
-    @a = OpenDataset.find(params[:a])
-    @b = OpenDataset.find(params[:b])
+    begin
+      @a = OpenDataset.find(params[:a])
+      @b = OpenDataset.find(params[:b])
+    rescue ActiveRecord::ActiveRecordError => e
+      puts "WHY"
+      redirect_to action: "random" and return
+    end
 
     a_truncated = truncate(@a.name, :length => 27)
     b_truncated = truncate(@b.name, :length => 27)
