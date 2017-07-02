@@ -9,7 +9,7 @@
     <a class="btn btn-danger" href="<%= @a.url %>" target="_blank">Link to Dataset</a>
   </div>
   <div class="button_column">
-    <a class="btn btn-danger" href="<%= url_for(controller: '/main_page', action: 'mashup') %>">Randomise!</a>
+    <a class="btn btn-danger" data-turbolinks="false" href="<%= url_for(controller: '/main_page', action: 'mashup') %>">Randomise!</a>
     <a class="btn btn-info" href="<%= @tweet_url %>" target="_blank">Tweet!</a>    
   </div>
   <div class="dataset dataset_b">
