@@ -51,6 +51,7 @@ body {
 	align-content: space-around;
 	justify-content: space-around;
 	flex-wrap: nowrap;
+	text-align: center;
 }
 
 .btn_base {
@@ -58,11 +59,11 @@ body {
 	color: white;
 	border: none;
 	border-radius: 4px;
-	padding: 7px 14px;
+	padding: 9px 18px;
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-	font-size: calc(.6vw + .6vh);
+	font-size: calc(.7vw + .7vh);
 	font-family: Montserrat, sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 1vh;
@@ -73,20 +74,29 @@ body {
 }
 
 .btn_a {
-	background-color: #CC1B54;
+	background-color: #d9534f;
 }
 
 .btn_a:hover {
-	background-color: #871237;
+	background-color: #d1332e;
 }
 
 .btn_b {
-	background-color: #0080BF;
+	background-color: #5bc0de;
 }
 
 .btn_b:hover {
-	background-color: #006699;
+	background-color: #41b5d8;
 }
+
+.btn_c {
+	background-color: #f0ad4e;
+}
+
+.btn_c:hover {
+	background-color: #ed9c2c;
+}
+
 
 .dataset .btn_base {
 	margin-top: auto;
@@ -107,7 +117,7 @@ body {
 }
 
 .dataset {
-	height: 60vh;
+	height: 50vh;
 
 	flex-basis: 47.5vw;
 	padding-top: 4vh;
