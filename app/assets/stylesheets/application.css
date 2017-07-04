@@ -36,7 +36,6 @@ body {
 	letter-spacing: 0.0325em;
 	font-size: calc(2vw + 2vh + 2vmin);
 	margin: 0px;
-	text-align: center;
 }
 
 .btn_base {
